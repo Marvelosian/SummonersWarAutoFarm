@@ -23,15 +23,17 @@ while 1:
     victory = pyautogui.locateOnScreen('img/victory.PNG', grayscale=True, confidence=.7)
     if(victory):
         pyautogui.click((victory.left + random_left(victory.width))
-                        ,(victory.top + random_top(victory.height))
-                        , clicks=2, interval=1.5)
-    wait()
-    
+        ,(victory.top + random_top(victory.height))
+        , clicks=2, interval=1.5)
+        print("Finished Run")
+        wait()
+        
     # Press Ok for runes,monster,events etc.
     btn_ok = pyautogui.locateOnScreen('img/ok.PNG', grayscale=True, confidence=.7)
     if(btn_ok):
         pyautogui.click((btn_ok.left + random_left(btn_ok.width))
-        ,(btn_ok.top + random_top(btn_ok.height)))           
+        ,(btn_ok.top + random_top(btn_ok.height)))
+        print("Got Something,Next update I will recognize what it is,sell runes below 6 stars,and log them")
     wait()
     
     # Press Replay
@@ -39,30 +41,32 @@ while 1:
     if(btn_replay):
         pyautogui.click((btn_replay.left + random_left(btn_replay.width))
         ,(btn_replay.top + random_top(btn_replay.height)))
-        wait()
+        Runs=Runs+1
+        print ("You have auto:",Runs,"Runs")
+    wait()
                         
-        #No Energy??
-        btn_notenoughenergy = pyautogui.locateOnScreen('img/notenoughenergy.PNG', grayscale=True, confidence=.9)
-        if(btn_notenoughenergy):
-            pyautogui.click((btn_notenoughenergy.left + random_left(btn_notenoughenergy.width))
-            ,(btn_notenoughenergy.top + random_top(btn_notenoughenergy.height)))
-            print("Not enough energy,opening gift box(EXPERIMENTAL)")
-            wait()
-            
-            btn_maybeenergy = pyautogui.locateOnScreen('img/maybenergy.PNG', grayscale=True, confidence=.9)
-            if(btn_maybeenergy):
-            # removing random and calculating where to click,needs YOUR tweaking
-                pyautogui.click((btn_maybeenergy.left +((btn_maybeenergy.width)-50))
-                ,(btn_maybeenergy.top + (btn_maybeenergy.height)-50))
-                print("I got the energy,exiting and retrying")
-                wait() 
-                # Exit
-                btn_exit = pyautogui.locateOnScreen('img/exit.PNG', grayscale=True, confidence=.9)
-                if(btn_exit):
-                    pyautogui.click((btn_exit.left + random_left(btn_exit.width))
-                    ,(btn_exit.top + random_top(btn_exit.height)))
-                    print("Exit tab")
+    #No Energy??
+    btn_notenoughenergy = pyautogui.locateOnScreen('img/notenoughenergy.PNG', grayscale=True, confidence=.9)
+    if(btn_notenoughenergy):
+        pyautogui.click((btn_notenoughenergy.left + random_left(btn_notenoughenergy.width))
+        ,(btn_notenoughenergy.top + random_top(btn_notenoughenergy.height)))
+        print("Not enough energy,opening gift box(EXPERIMENTAL)")
         wait()
+            
+        btn_maybeenergy = pyautogui.locateOnScreen('img/maybenergy.PNG', grayscale=True, confidence=.9)
+        if(btn_maybeenergy):
+            # removing random and calculating where to click,needs YOUR tweaking
+            pyautogui.click((btn_maybeenergy.left +((btn_maybeenergy.width)-50))
+            ,(btn_maybeenergy.top + (btn_maybeenergy.height)-50))
+            print("I got the energy,exiting and retrying")
+            wait() 
+            # Exit
+            btn_exit = pyautogui.locateOnScreen('img/exit.PNG', grayscale=True, confidence=.9)
+            if(btn_exit):
+                pyautogui.click((btn_exit.left + random_left(btn_exit.width))
+                ,(btn_exit.top + random_top(btn_exit.height)))
+                print("Exit tab")
+    wait()
             
     # End of Press Replay
     
@@ -83,6 +87,10 @@ while 1:
     #End of Prepare
     
     #captcha
+        
+    wait()
+    
+    
     
     
     ## Reset the random position
@@ -94,7 +102,8 @@ while 1:
     btn_exit = None
     btn_prepare = None
     btn_startreplay = None
-
+    if (Runs==18):
+        break 
     # Quit the program
     if msvcrt.kbhit():
         if ord(msvcrt.getch()) == 59:
