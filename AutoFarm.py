@@ -7,9 +7,7 @@ def wait():
     sleep(round(random.uniform(.8, 3), 2))
 
 
-#Get Window
-titles=gw.getAllTitles()
-print(titles)
+
 Runes = 0
 Runs = 0
 # Random clicking location
@@ -106,8 +104,7 @@ while 1:
     btn_exit = None
     btn_prepare = None
     btn_startreplay = None
-    if (Runs==18):
-        break 
+
     # Quit the program
     if msvcrt.kbhit():
         if ord(msvcrt.getch()) == 59:
