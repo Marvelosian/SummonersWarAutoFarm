@@ -27,8 +27,7 @@ Current version = 0.0.0
 
 ## Authors
 
-* **Marvelosian** - *Initial work* - [Marvelosian](https://github.com/Marvelosian)
-
+* **Marvelosian** - *Initial work* - [Github](https://github.com/Marvelosian)
 [Discord](https://discordapp.com/users/679815168372244480)
 
 ## License
