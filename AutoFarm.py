@@ -1,6 +1,6 @@
 import pyautogui, cv2, msvcrt, random
 from time import sleep
-
+import pygetwindow as gw
 # region=(0,0, 300, 400) explanation :(a 4-integer tuple of (left, top, width, height))
 # Random wait time between clicks
 def wait():
@@ -8,8 +8,8 @@ def wait():
 
 
 #Get Window
-pyautogui.getWindows()
-
+titles=gw.getAllTitles()
+print(titles)
 Runes = 0
 Runs = 0
 # Random clicking location
