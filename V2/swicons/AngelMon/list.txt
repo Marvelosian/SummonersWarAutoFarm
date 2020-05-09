@@ -1,0 +1,12 @@
+Blue_Angelmon.png
+Blue_King_Angelmon.png
+CreateLists.bat
+Dark_Angelmon.png
+Dark_King_Angelmon.png
+Gold_Angelmon.png
+Gold_King_Angelmon.png
+list.txt
+Red_Angelmon.png
+Red_King_Angelmon.png
+White_Angelmon.png
+White_King_Angelmon.png
