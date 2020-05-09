@@ -12,7 +12,7 @@ Python
 pip install pyautogui
 ```
 ```
-pip install opencv
+pip install opencv-python
 ```
 
 ### Running

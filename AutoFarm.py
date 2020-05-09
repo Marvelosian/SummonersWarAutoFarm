@@ -80,7 +80,7 @@ while 1:
     if(btn_prepare):
         pyautogui.click((btn_prepare.left + random_left(btn_prepare.width))
         ,(btn_prepare.top + random_top(btn_prepare.height)))
-        btn_startreplay = pyautogui.locateOnScreen('img/startreplay.PNG', grayscale=True, confidence=.7)
+        btn_startreplay = pyautogui.locateOnScreen('img/startbattle.PNG', grayscale=True, confidence=.7)
         wait()
         if(btn_startreplay):
             pyautogui.click((btn_startreplay.left + random_left(btn_startreplay.width))
