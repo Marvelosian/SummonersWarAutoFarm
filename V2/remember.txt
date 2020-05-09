@@ -1,0 +1,13 @@
+-How to get the window position and size? (Windows)
+!!!https://stackoverflow.com/questions/7142342/get-window-position-size-with-python
+https://stackoverflow.com/questions/42215286/python-retrieve-active-window-position-and-size-osx-and-windows
+!!!https://stackoverflow.com/questions/3646362/how-to-control-the-size-of-the-windows-shell-window-from-within-a-python-script
+
+-How to get the window position and size? (Mac)
+!!!https://stackoverflow.com/questions/42215286/python-retrieve-active-window-position-and-size-osx-and-windows
+
+-How to get the window position and size? (Linux)
+https://stackoverflow.com/questions/7142342/get-window-position-size-with-python
+
+
+https://pypi.org/project/PyGetWindow/
