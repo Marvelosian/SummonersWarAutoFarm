@@ -1,0 +1,4 @@
+Blue_Angelmon.png
+Blue_King_Angelmon.png
+CreateLists.bat
+list.txt

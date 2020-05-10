@@ -66,9 +66,9 @@ SecondAwakenedWindMons=createmonlist(folder+SecondAwakened+Wind)
 SecondAwakenedLightMons=createmonlist(folder+SecondAwakened+Light)
 SecondAwakenedDarkMons=createmonlist(folder+SecondAwakened+Dark)
 #Assigning AngelMons
-AngelMonsFire=createmonlist(folder+SecondAwakened+Fire)
-AngelMonsWater=
-AngelMonsWind=
-AngelMonsLight=
-AngelMonsDark=
+AngelMonsFire=createmonlist(folder+Angelmon+Fire)
+AngelMonsWater=createmonlist(folder+Angelmon+Fire)
+AngelMonsWind=createmonlist(folder+Angelmon+Fire)
+AngelMonsLight=createmonlist(folder+Angelmon+Fire)
+AngelMonsDark=createmonlist(folder+Angelmon+Fire)
 #Assigning RuneTypes

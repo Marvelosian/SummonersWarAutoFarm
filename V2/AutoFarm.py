@@ -1,7 +1,7 @@
 import pyautogui, cv2, msvcrt, random
 import pygetwindow as gw
 from time import sleep
-from swicons.swiconsoy import *
+from swicons.swiconspy import *
 
 #wait
 def wait():
@@ -17,23 +17,21 @@ def random_top(height):
 
 
 searches=["Noxplayer","Bluestacks"]
-# region=(0,0, 300, 400) explanation :(a 4-integer tuple of (left, top, width, height))
-# print (Appwindow.size)
-#print (Appwindow.topleft)
-def getregion(appwindow):
-    appwindow.topleft
-    appwindow.size
-    region = appwindow.topleft,appwindow.size
-    return region
-#Apptitles= gw.getAllTitles()
-#search function with window name
 
+#this function uses returns the appwindow's region(numbers)
+def getregion(appwindow):
+    # region=(0,0, 300, 400) explanation :(a 4-integer tuple of (left, top, width, height))
+    region = appwindow.left,appwindow.top,appwindow.width,appwindow.height
+    return region
+
+#search function with window name
 def searchwindow(name):
     #search titles
+    #Apptitles= gw.getAllTitles()
     if gw.getWindowsWithTitle(name)[0]
         Appwindow = gw.getWindowsWithTitle(name)[0]
 
-
+def getwindow():
 
 def autosearchwindow(searchwindows):
     #windows to search
@@ -41,9 +39,9 @@ def autosearchwindow(searchwindows):
 
 
 def click(name):
-    region = getregion()
+    regionnum = getregion()
     png=""
-    btn=pyautogui.locateOnScreen(pngname, grayscale=True, confidence=.7,region)
+    btn=pyautogui.locateOnScreen(pngname, grayscale=True, confidence=.7,region=(regionnum))
     if (btn):
         pyautogui.click((btn.left + random_left(btn.width))
         ,(btn.top + random_top(btn.height)))
