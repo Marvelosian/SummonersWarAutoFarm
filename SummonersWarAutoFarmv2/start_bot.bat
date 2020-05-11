@@ -1,4 +1,4 @@
 @echo off
-cd project
+cd Project
  call ..\Scripts\activate.bat
 main.py exit
