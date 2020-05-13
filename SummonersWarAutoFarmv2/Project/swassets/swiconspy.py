@@ -4,7 +4,7 @@
 #List Files Ease
 listtxt="list.txt"
 #folder
-folder="swicons/"
+folder="swassets/"
 
 #Awakaned
 Awakened="Awakened/"

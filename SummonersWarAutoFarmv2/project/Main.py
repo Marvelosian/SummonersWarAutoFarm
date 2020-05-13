@@ -1,7 +1,7 @@
 import pyautogui, cv2, msvcrt, random
 from time import sleep
 import pygetwindow as gw
-from swicons.swiconspy import *
+from swassets.swiconspy import *
 
 # region=(0,0, 300, 400) explanation :(a 4-integer tuple of (left, top, width, height))
 # Random wait time between clicks
