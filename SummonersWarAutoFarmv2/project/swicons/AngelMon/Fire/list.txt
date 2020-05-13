@@ -1,4 +1,0 @@
-CreateLists.bat
-list.txt
-Red_Angelmon.png
-Red_King_Angelmon.png

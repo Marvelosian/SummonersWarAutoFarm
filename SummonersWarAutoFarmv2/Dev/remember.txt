@@ -11,3 +11,14 @@ https://stackoverflow.com/questions/7142342/get-window-position-size-with-python
 
 
 https://pypi.org/project/PyGetWindow/
+
+Setting Up Accessibility Apps on macOS
+As a security measure, macOS doesn’t normally let programs control the mouse or keyboard.
+To make PyAutoGUI work on macOS, you must set the program running your Python script to
+be an accessibility application. Without this step, your PyAutoGUI function calls will have no effect.
+
+Whether you run your Python programs from Mu, IDLE, or the Terminal, have that application open.
+Then open the System Preferences and go to the Accessibility tab. The currently open applications will
+appear under the “Allow the apps below to control your computer” label. Check Mu, IDLE, Terminal,
+or whichever app you use to run your Python scripts. You’ll be prompted to enter your password to
+confirm these changes.

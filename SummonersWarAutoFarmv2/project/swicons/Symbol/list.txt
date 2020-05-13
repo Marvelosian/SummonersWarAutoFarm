@@ -1,7 +1,0 @@
-CreateLists.bat
-DarkSymbol.png
-FireSymbol.png
-LightSymbol.png
-list.txt
-WaterSymbol.png
-WindSymbol.png

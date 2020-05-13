@@ -1,6 +1,0 @@
-CreateLists.bat
-Iselia.png
-list.txt
-Raoq.png
-Tatu.png
-Ursha.png

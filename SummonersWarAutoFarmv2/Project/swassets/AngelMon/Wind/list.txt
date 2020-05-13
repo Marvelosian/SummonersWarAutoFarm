@@ -1,0 +1,4 @@
+CreateLists.bat
+Gold_Angelmon.png
+Gold_King_Angelmon.png
+list.txt

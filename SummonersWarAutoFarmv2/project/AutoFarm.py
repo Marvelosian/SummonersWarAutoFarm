@@ -2,6 +2,11 @@ import pyautogui, cv2, msvcrt, random
 import pygetwindow as gw
 from time import sleep
 from swicons.swiconspy import *
+import eel
+
+#start interface
+eel.init('web')
+eel.start('index.html', size=(1000, 600))
 
 #wait
 def wait():
@@ -28,18 +33,21 @@ def getregion(appwindow):
 def searchwindow(name):
     #search titles
     #Apptitles= gw.getAllTitles()
-    if gw.getWindowsWithTitle(name)[0]
+    if gw.getWindowsWithTitle(name)[0]:
         Appwindow = gw.getWindowsWithTitle(name)[0]
 
 def autosearchwindow(searchwindows):
     #windows to search
     for i in range(len(searchwindows)):
+        oof= ("not made")
 
 def getwindow():
+    oof=("not made")
+    return  oof
 
 def click(name):
     regionnum = getregion(getwindow())
-    png=""
+    pngname=locate(name)
     btn=pyautogui.locateOnScreen(pngname, grayscale=True, confidence=.9,region=(regionnum))
     if (btn):
         pyautogui.click((btn.left + random_left(btn.width))
@@ -47,3 +55,4 @@ def click(name):
     btn=none
 
 def locate(name):
+    return png

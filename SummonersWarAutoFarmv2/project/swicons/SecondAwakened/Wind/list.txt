@@ -1,7 +1,0 @@
-Aeilene.png
-CreateLists.bat
-list.txt
-Lusha.png
-Ramagos.png
-Ramahan.png
-Shannon.png
