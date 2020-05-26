@@ -21,5 +21,4 @@ def generate_qr(data):
     print("QR code generation successful.")
     return "data:image/png;base64, " + encoded
 
-
-eel.start('index.html', size=(1000, 600))
+eel.start('index.html',size=(1024,768), port=8080)
