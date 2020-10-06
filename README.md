@@ -2,6 +2,8 @@
 
 A summoners war autofarm bot, version 0.0.0
 
+The project will remain unfinished cause of the replay update that Summoners War did. The update made the project not needed.
+
 ### Prerequisites
 
 What things you need to install for the AutoFarm Bot to run.
